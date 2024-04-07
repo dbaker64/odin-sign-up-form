@@ -1,0 +1,116 @@
+:root {
+    --main-height: 100%;
+    --primary-color: #0b5394;
+    --background-color: #e3f2fd;
+    --secondary-color: #ffd966;
+}
+
+@font-face {
+    font-family: "Fascinate Inline";
+    src: url("heading.ttf");
+}
+
+@font-face {
+    font-family: "Zilla Slab";
+    src: url("ZillaSlab-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Zilla Slab";
+    src: url("ZillaSlab-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    width: 95vw;
+    height: 95vh;
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    bottom: 2vh;
+    right: 2vw;
+}
+
+#left-container {
+    background-color: var(--background-color);
+    height: var(--main-height);
+    width: calc((1/3) * 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#logo {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 33%;
+}
+
+h1 {
+    font-family: "Fascinate Inline", Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+#right-container {
+    background-color: var(--primary-color);
+    height: var(--main-height);
+    width: calc((2/3) * 100%);
+    color: white;
+    font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+
+p {
+    text-align: left;
+}
+
+#intro {
+    margin-top: 20%;
+}
+
+a {
+    color: white;
+}
+
+#form-container {
+    margin-top: 10%;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#col-wrapper {
+    display: flex;
+}
+
+#col-1 {
+    margin-right: 10%;
+}
+
+.input-wrapper {
+    padding: 10px 0px;
+}
+
+button {
+    font-family: "Zilla Slab", Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-style: hidden;
+    border-radius: 8px;
+}
+
+:invalid {
+    border-color: red;
+}

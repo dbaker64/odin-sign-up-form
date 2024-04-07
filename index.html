@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="left-container">
+        <img id="logo" src="logo.png" alt="chamber pops logo">
+        <h1>Chamber Pops</h1>
+    </div>
+    <div id="right-container">
+        <p id="intro">Sign up for Chamber Pops today! Join us making music and having lots of fun at The Rialto
+            Theater! Now is the best time to sign up. Disclaimer: This sign-up form is a test project,
+            and will not actually sign you up. Please visit <a href="https://chamberpops.com" target="_blank">chamberpops.com</a>
+            to learn more.
+        </p>
+        <p>You can do this!!!</p>
+        <form action="" method="">
+            <div id="form-container">
+                <h2>Sign-Up Below:</h2>
+                <div id="col-wrapper">
+                    <div id="col-1">
+                        <div class="input-wrapper">
+                            <label for="first-name">First Name: </label><br>
+                            <input type="text" id="first-name" placeholder="John" required><br>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="email">Email: </label><br>
+                            <input type="email" id="email" placeholder="john@smith.com" required><br>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="password">Password: </label><br>
+                            <input type="password" id="password" required><br>
+                        </div>
+                        <div class="input-wrapper">
+                            <button type="submit">Sign-Up</button>
+                        </div>
+                    </div>
+                    <div id="col-2">
+                        <div class="input-wrapper">
+                            <label for="last-name">Last Name: </label><br>
+                            <input type="text" id="last-name" placeholder="Smith"><br>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phone">Phone Number: </label><br>
+                            <input type="tel" id="phone" placeholder="123-456-7890" pattern="/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/"><br>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="confirm-password">Confirm Password: </label><br>
+                            <input type="password" id="confirm-password" required><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
